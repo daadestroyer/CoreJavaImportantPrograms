@@ -184,8 +184,7 @@ Q. When we're creation child class object automatically parent class constructor
    why parent class contructor called?
 ----
 Ans:-
->>> If we're creation child class object then parent constructor executed bcoz at after creating child class object then JVM goto child
-    class contructor and 1st line of constructor contain super(); so parent class constrcutor called
+>>> Parent class constructor is executed because to initialize the parent class instance variable for child needs
 
 class P{
   P(){
