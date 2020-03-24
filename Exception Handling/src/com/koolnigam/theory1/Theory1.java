@@ -59,7 +59,7 @@ FINALLY BLOCK:-
     catch(Exception e){
     ---handling code---
     }
-    finall{
+    finally{
     ---resource cleanup code---
     }
     
@@ -94,6 +94,7 @@ THROW:-
 ========
 >>> sometimes we can create our own customized exception for that purpose we can use throw keyword and exception will be handover to 
     the JVM...
+>>> after throw statement we can't write any statement directly if we did we will get CE: saying unreachable statement
 >>> we use throw keyword for Throwable type only otherwise we will get CE:
 
 class TooYoungException extends RuntimeException {
@@ -129,11 +130,10 @@ class App5
 }
 THROWS:-
 ========
->>> in our program if there is any chance or raising checked exception then compulsort we've to handle that exception by throws or 
-    try-catch
->>> we'll use throws keyword to deligate the responsiblity of exception handling to called method
+>>> in our program if there is any chance or raising checked exception then compulsory we've to handle that exception by throws or try-catch
+>>> we'll use throws keyword to deligate the responsiblity of exception handling to caller method then called method is responsible to handle the exception
 >>> throws keyword is use for checked exception , if we use throws keyword for unchecked then there is no use
->>> we use throws keyword for Throwable type only otherwise we will get CE:   
+>>> we use throws keyword for Throwable type only otherwise we will get CE: saying incompatible types
     
     
     
