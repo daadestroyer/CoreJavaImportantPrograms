@@ -9,6 +9,11 @@ class ThreadB extends Thread{
 			for (int i = 1; i <= 100; i++) {
 				total = total+i;
 			}
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			System.out.println("Child Giving Notification To Main");
 			this.notify(); // notify to main when child completed
 		}
@@ -19,14 +24,15 @@ public class App21ThreadComm {
 	public static void main(String[] args) throws InterruptedException {
 		ThreadB b = new ThreadB();
 		b.start(); // after this there are 2 thread 
-		// Thread.sleep(1000); // main sleep for 10 second maanwhile child get chance first
+		// Thread.sleep(1000); // main sleep for 10 second meanwhile child get chance first
 		// b.join();
 		//Thread.sleep(10000);
 		synchronized(b) {
 			System.out.println("Main Thread Calling Waiting Method");
-			b.wait(); // it will wait untill child is not completed and child will notify to main also , and we can call wait(),notify(),notifyAll() in synchronized area only
+			b.wait(); // it will wait until child is not completed and child will notify to main also , and we can call wait(),notify(),notifyAll() in synchronized area only
 			
 		}
+		Thread.sleep(2000);
 		System.out.println("Main Got Notification");
 		System.out.print(b.total);
 		

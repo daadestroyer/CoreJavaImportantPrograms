@@ -21,7 +21,7 @@ public class App18Interrupt {
 		MyThread t = new MyThread();
 		t.start();
 		t.interrupt(); // main thread is waiting for child thread that whenever child thread goes to sleep or wait state after completing her task main will interrupt the child
-		System.out.println("End of main method");
+		System.out.println("Main Started");
 
 	}
 

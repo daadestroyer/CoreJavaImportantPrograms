@@ -1,6 +1,6 @@
 package com.koolnigam.app15;
 
-
+// Child thread wait for main after that child complete her task
 class MyThread extends Thread{
 	 static Thread mt;
 	public void run() {

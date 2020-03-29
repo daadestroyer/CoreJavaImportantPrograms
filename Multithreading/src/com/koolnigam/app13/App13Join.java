@@ -1,5 +1,6 @@
 package com.koolnigam.app13;
 
+// Main thread wait for child after that main completed
 class MyThread extends Thread{
 	public void run() {
 		for (int i = 0; i < 10; i++) {
