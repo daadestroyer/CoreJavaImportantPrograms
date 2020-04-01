@@ -23,6 +23,7 @@ class Outer {
 	public static void main(String[] args) {
      // To access static class nested variable we don't need Outer class object i.e Outer class and static class nested having week association 
 		Nested n = new Nested();
+		System.out.println(Nested.x);
 		n.m1();
 	
 	// but to access Inner class variable we comulsory need object i.e Outer and Inner class having strong assocation

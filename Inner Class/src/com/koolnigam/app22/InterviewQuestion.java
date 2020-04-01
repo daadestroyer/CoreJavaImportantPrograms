@@ -36,32 +36,13 @@ Q.21 Inside anonymous class we can declare parent class overrided method and chi
 Q.22 Give example of anonymous inner class in which Define a thread by extending Thread class ?
 Q.23 Give example of anonymous inner class that implements interface ?
 Q.24 Give example of anonymous inner class that define inside method arguments ?
-Q.25
-Q.26
-Q.27
-Q.28
-Q.28
-Q.30
-Q.31
-Q.32
-Q.33
-Q.34
-Q.35
-Q.36
-Q.37
-Q.38
-Q.39
-Q.40
-Q.41
-Q.42
-Q.43
-Q.44
-Q.45
-Q.46
-Q.47
-Q.48
-Q.49
-Q.50
-
+Q.25 Difference b/w normal java class and anonymous inner class ?
+Q.26 What is static nested class ? Give example of static nested class ? Static nested class and Outer class having what type of association (week or strong) ?
+Q.27 In normal regular inner class we can access static and non-static member of outer class directly by in static nested class we can access static member of outer 
+     class directly and can't access instance member directly it is true or not ? ---> TRUE
+Q.28 We can't declare static member(main method also) inside normal inner class but in static nested class we can it is true not not ? ---> TRUE
+Q.28 Difference b/w normal/regular inner class and static nested class ?
+Q.30 Give example to show that how we can make interface inside class and other class can implement that interface ? 
+Q.31 Give example to show that how we can make interface inside interface ?
 */
 }
