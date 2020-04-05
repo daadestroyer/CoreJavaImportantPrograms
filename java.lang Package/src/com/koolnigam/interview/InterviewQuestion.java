@@ -67,7 +67,7 @@ Q.29 What are the disadvantage of StringBuffer in comparison with StringBuilder 
 Q.30 Difference b/w StringBuffer and StringBuilder ? 
 Q.31 When we will use StringBuilder ? and why ?
 Q.32 Explain String VS StringBuffer VS StringBuilder
-Q.33
+Q.33 Explain all utility methods ? 
 Q.34
 Q.35
 Q.36

@@ -115,7 +115,7 @@ public class App16_WrapperClass02 {
 		public String toString(Object o) ---> To convert wrapper object/primitive to String
 		================================
 		*/
-		
+		/*
 		Integer I = Integer.valueOf("10");
 		String s = I.toString();
 		System.out.println(s);
@@ -126,7 +126,7 @@ public class App16_WrapperClass02 {
 		
 		String S = Integer.toString(10); // 
 		System.out.println(S);
-		
+		*/
 		
 		
 		
