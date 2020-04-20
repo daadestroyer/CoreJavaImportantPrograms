@@ -2,6 +2,8 @@ package com.koolnigam.app37;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Deque;
+import java.util.LinkedList;
 
 class MyComparator implements Comparator<Object>{
 	public  int compare(Object obj1 , Object obj2) {
@@ -13,8 +15,10 @@ class MyComparator implements Comparator<Object>{
 public class App37_Arrays04 {
 
 	public static void main(String[] args) {
-		
-		String[] a = {"A","Z","B"};
+		Deque<String> deque = new LinkedList<String>(); 
+	   
+		/*
+	    String[] a = {"A","Z","B"};
 		Arrays.sort(a);  // sorting based on default natural sorting
 		System.out.println("sorting based on default natural sorting");
 		for (String s1 : a) {
@@ -31,8 +35,10 @@ public class App37_Arrays04 {
 		}
 		
  		System.out.println(Arrays.binarySearch(a,"A",new MyComparator())); // 2
-		System.out.println(Arrays.binarySearch(a, "C", new MyComparator())); // -2
-
+		System.out.println(Arrays.binarySearch(a, "C", new MyComparator())); // -2a
+       */
+		
+		
 	}
 
 }
