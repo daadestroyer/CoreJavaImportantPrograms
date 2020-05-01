@@ -1,22 +1,7 @@
 package com.koolnigam.app4;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-public class App4_RegeDemo_Quantifiers {
-
-	public static void main(String[] args) {
-		Pattern p = Pattern.compile("a?");
-		Matcher m = p.matcher("abaabaaab");
-	  
-		while(m.find()) {
-			System.out.println(m.start()+"---"+m.group());
-		}
-	
-	}
-	
-}
 /*
+Quantifiers:-
+-------------
 x--> a we're searching for single a
      0---a
 	 2---a
@@ -51,5 +36,21 @@ x--> a? we're searching for at most one a
 	 8---
 	 9---
 
-
 */
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class App4_RegeDemo_Quantifiers {
+
+	public static void main(String[] args) {
+		Pattern p = Pattern.compile("a?");
+		Matcher m = p.matcher("abaabaaab");
+	  
+		while(m.find()) {
+			System.out.println(m.start()+"---"+m.group());
+		}
+	
+	}
+	
+}

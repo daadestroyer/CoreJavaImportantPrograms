@@ -30,7 +30,7 @@ public class App7_RegeDemo_MobileNo {
 		
 	/*
     // If we want to represent both 10 and 11 digit mobile no 
-    Pattern p1 = Pattern.compile("0?[6-9][0-9]{9}");
+    Pattern p1 = Pattern.compile("0?[6-9][0-9]{9}"); // 0 6789 0123456789
     Matcher m = p1.matcher(no);
     
     if(m.find()&&m.group()==no) {
@@ -43,10 +43,10 @@ public class App7_RegeDemo_MobileNo {
     */
 	
 /*====================================================================================================================*/	
-	
+	/*
 	// If we want to represent both 10 , 11 , 12 digit mobile no 
 	
-	Pattern p = Pattern.compile("(0|91)?[6-9][0-9]{9}");
+	Pattern p = Pattern.compile("(0|91)?[6-9][0-9]{9}"); 
     Matcher m = p.matcher(no);
     
     if(m.find()&&m.group().equals(no)) {
@@ -55,6 +55,10 @@ public class App7_RegeDemo_MobileNo {
     else {
     	System.out.println("invalid no");
     }
+    */
+	
+	
+	
 	}
 	
 }
