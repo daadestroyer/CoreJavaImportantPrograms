@@ -29,7 +29,9 @@ public class App21ThreadComm {
 		//Thread.sleep(10000);
 		synchronized(b) {
 			System.out.println("Main Thread Calling Waiting Method");
-			b.wait(); // it will wait until child is not completed and child will notify to main also , and we can call wait(),notify(),notifyAll() in synchronized area only
+			b.wait(); /* it will wait until child is not completed and child will notify to main also , and we can call wait(),notify()
+			          ,notifyAll() in synchronized area only once Thread call wait method on the given object 1st it release lock of 
+			           current object and then it should be enter in the waiting state */
 			
 		}
 		Thread.sleep(2000);

@@ -31,10 +31,11 @@ class MyThread extends Thread{
 public class App19SynchronizedDemo {
 
 	public static void main(String[] args) {
-		Display d1 = new Display();
+		
+		Display d = new Display();
 		//Display d2 = new Display();
-		MyThread t1 = new MyThread(d1,"Dhoni");
-		MyThread t2 = new MyThread(d1,"Sachin"); // there is no gurrantee that which thread get lock 1st depend on JVM and default priority
+		MyThread t1 = new MyThread(d,"Dhoni");
+		MyThread t2 = new MyThread(d,"Sachin"); // there is no gurrantee that which thread get lock 1st depend on JVM and default priority
 		//MyThread t3 = new MyThread(d,"Kohli");
 		//MyThread t4 = new MyThread(d,"Rohit");
         t1.start();

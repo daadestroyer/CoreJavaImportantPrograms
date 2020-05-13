@@ -2,7 +2,7 @@ package com.koolnigam.app23;
 
 
 class A{
-	public synchronized void d1(B b) {
+	public synchronized void d1(B b) {	
 		System.out.println("Thread-1 Starts Executiong Of d1 Method");
 	  try {
           Thread.sleep(5000);		
@@ -38,7 +38,7 @@ public class App23Deadlock extends Thread{
 	B b = new B();
 	
 	public void m1() {
-		this.start(); //after this line there are 2 thread 
+		this.start(); //all the current object class Thread will be started
 		a.d1(b); // this executed by main thread
 		
 	}
