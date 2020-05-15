@@ -1,6 +1,7 @@
 package com.koolnigam.app2;
 /* 
->>> If we declare a named class inside another class without using static modifier such type of classes are called as Regular or Normal Inner class
+>>> If we declare a named class inside another class without using static modifier such type of classes are 
+called as Regular or Normal Inner class
 
 */class Outer {
   class Inner{

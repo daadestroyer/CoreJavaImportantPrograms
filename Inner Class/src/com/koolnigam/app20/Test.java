@@ -1,5 +1,4 @@
 package com.koolnigam.app20;
-
 class Test 
 {
 	int x = 10;
@@ -16,7 +15,7 @@ class Test
     	  System.out.println(Test.y);
       }
     }
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		Nested n = new Nested();
 		n.m1();
 
